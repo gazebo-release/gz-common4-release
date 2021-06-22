@@ -1,3 +1,9 @@
+ignition-common4 (4.1.0-1~sid) sid; urgency=medium
+
+  * ignition-common4 4.1.0-1 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Tue, 22 Jun 2021 10:33:58 -0700
+
 ignition-common4 (4.0.0-1~sid) sid; urgency=medium
 
   * ignition-common4 4.0.0-1 release
