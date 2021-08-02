@@ -1,3 +1,9 @@
+ignition-common4 (4.2.0-1~buster) buster; urgency=medium
+
+  * ignition-common4 4.2.0-1 release
+
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 02 Aug 2021 14:26:52 -0500
+
 ignition-common4 (4.1.0-1~buster) buster; urgency=medium
 
   * ignition-common4 4.1.0-1 release
