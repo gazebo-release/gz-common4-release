@@ -1,3 +1,9 @@
+ignition-common4 (4.4.0-1~sid) sid; urgency=medium
+
+  * ignition-common4 4.4.0-1 release
+
+ -- Michael Carroll <michael@openrobotics.org>  Fri, 15 Oct 2021 12:56:07 -0500
+
 ignition-common4 (4.3.0-1~sid) sid; urgency=medium
 
   * ignition-common4 4.3.0-1 release
