@@ -1,14 +1,13 @@
 Source: ignition-common4
-Standards-Version: 3.9.8
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
 Build-Depends: cmake,
                pkg-config,
-               debhelper (>= 9),
+               debhelper (>= 11),
                doxygen,
                libfreeimage-dev,
-               libignition-cmake2-dev (>= 2.8.0),
+               libignition-cmake2-dev (>= 2.8.0) | libignition-cmake-dev (>= 2.8.0,
                libignition-math6-dev,
                libignition-utils1-dev,
                libtinyxml2-dev,
@@ -19,8 +18,9 @@ Build-Depends: cmake,
                libavcodec-dev,
                libswscale-dev,
                libavutil-dev
-Vcs-Browser: https://github.com/ignition-release/ign-common4-release
+Vcs-Browser: https://github.com/ignitionrobotics/ignition-common
 Vcs-Git: https://github.com/ignition-release/ign-common4-release
+Standards-Version: 4.5.1
 Homepage: http://ignitionrobotics.org/
 
 Package: libignition-common4
@@ -28,12 +28,16 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-common4-4 (<= 4.5.0+ds-1)
+Replaces: libignition-common4-4 (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions for robot apps - Shared library
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Shared library
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
- Main shared library
+ This package gathers the shared library
 
 Package: libignition-common4-core-dev
 Architecture: any
@@ -43,12 +47,16 @@ Depends: libignition-cmake2-dev (>= 2.8.0),
          uuid-dev,
          libignition-common4 (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
+        libignition-common-core-dev (<= 4.5.0+ds-1)
+Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
+          libignition-common-core-dev (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions (core) - Development files
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Core dev files
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
  Core development files
 
@@ -61,24 +69,30 @@ Depends: libignition-common4-core-dev (= ${binary:Version}),
          libignition-common4-graphics-dev (= ${binary:Version}),
          libignition-common4-profiler-dev (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-common-dev (<= 4.5.0+ds-1)
+Replaces: libignition-common-dev (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions for robot apps - Metapackage
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Metapackage
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
- Metapackage for development
+ Metapackage for development.
 
 Package: libignition-common4-av
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common4-av4 (<= 4.5.0+ds-1)
+Replaces: libignition-common4-av4 (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions (AV) - Shared library
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - AV libraries
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
  AV component of the library
 
@@ -95,12 +109,16 @@ Depends: libignition-cmake2-dev (>= 2.8.0),
          libavutil-dev,
          libignition-common4-av (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
+        libignition-common-av-dev (<= 4.5.0+ds-1)
+Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
+          libignition-common-av-dev (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions (AV) - Development files
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - AV dev files
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
  AV component of the library, development files
 
@@ -109,12 +127,16 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
+        libignition-common4-events4 (<< 4.5.0+ds-1)
+Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
+          libignition-common4-events4 (<< 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions (Events) - Shared library
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Events libraries
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
  Events component of the library
 
@@ -130,23 +152,29 @@ Depends: libignition-cmake2-dev (>= 2.8.0),
 Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
-Description: Ignition Common classes and functions (Events) - Development files
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Events dev files
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
- Events component of the library, development files
+ Events component development files
 
 Package: libignition-common4-graphics
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
+        libignition-common4-graphics4 (<= 4.5.0+ds-1)
+Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
+          libignition-common4-graphics4 (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions (Graphics) - Shared library
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Graphics libraries
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
  Graphics component of the library
 
@@ -164,23 +192,29 @@ Depends: libignition-cmake2-dev (>= 2.8.0),
 Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
-Description: Ignition Common classes and functions (Graphics) - Development files
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Graphics dev files
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
- Graphics component of the library, development files
+ Graphics component development files
 
 Package: libignition-common4-profiler
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
+        libignition-common4-profiler4 (<= 4.5.0+ds-1)
+Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
+          libignition-common4-profiler4 (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions (Profiler) - Shared library
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Profiler libs
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
  Profiler component of the library
 
@@ -191,11 +225,15 @@ Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-core-dev (= ${binary:Version}),
          libignition-common4-profiler (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
+        libignition-common-dev (<= 4.5.0+ds-1)
+Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
+        libignition-common-dev (<= 4.5.0+ds-1)
 Multi-Arch: same
-Description: Ignition Common classes and functions (profiler) - Development files
- Ignition Common is a component in the ignition framework, a set of libraries
- designed to rapidly develop robot applications.
+Description: Collection of useful code used by robotics apps - Profiler dev file
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
  .
- profiler component of the library, development files
+ Profiler development files

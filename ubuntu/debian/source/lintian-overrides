@@ -1,0 +1,3 @@
+# real source is in the file. Leave it here not to make salsa CI to fail.
+# others lintian warnings related to Convert.js are left since they are valids
+source-is-missing profiler/src/Remotery/vis/extern/BrowserLib/Core/Code/Convert.js
