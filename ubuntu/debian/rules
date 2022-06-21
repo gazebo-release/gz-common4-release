@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-BUILDHOME = $(CURDIR)/debian/build
-
 %:
 	dh $@
 
@@ -9,16 +7,14 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
-override_dh_clean:
-	dh_clean
-	rm -rf $(BUILDHOME)
-
-execute_after_dh_install:
+override_dh_install:
+	dh_install --
 	# need to remove files present in components
 	$(RM) debian/libignition-common4-core-dev/usr/include/ignition/common*/ignition/common/av.hh
 	$(RM) debian/libignition-common4-core-dev/usr/include/ignition/common*/ignition/common/events.hh
 	$(RM) debian/libignition-common4-core-dev/usr/include/ignition/common*/ignition/common/graphics.hh
+	dh_missing --list-missing
 
+# test cannot run in parallel
 override_dh_auto_test:
-	mkdir -p $(BUILDHOME)
-	HOME=$(BUILDHOME) dh_auto_test --no-parallel
+	dh_auto_test --max-parallel=1
