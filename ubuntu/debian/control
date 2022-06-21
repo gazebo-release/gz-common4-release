@@ -206,9 +206,9 @@ Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
-        libignition-common4-profiler4 (<= 4.5.0+ds-1)
+        libignition-common4-profiler (<= 4.5.0+ds-1)
 Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
-          libignition-common4-profiler4 (<= 4.5.0+ds-1)
+          libignition-common4-profiler (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Profiler libs
  Ignition common is a component in the Ignition framework, a set of

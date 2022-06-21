@@ -62,7 +62,7 @@ ignition-common4 (4.0.0~pre1-1~focal) focal; urgency=medium
 
   * ignition-common4 4.0.0~pre1-1 release
 
- -- Michael Carroll <mjcarroll@dalinar>  Mon, 22 Mar 2021 18:58:49 -0500
+ -- Michael Carroll <michael@openrobotics.org>  Mon, 22 Mar 2021 18:58:49 -0500
 
 ignition-common4 (3.999.999-1~focal) focal; urgency=medium
 
