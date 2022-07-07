@@ -225,10 +225,8 @@ Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-core-dev (= ${binary:Version}),
          libignition-common4-profiler (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
-        libignition-common-dev (<= 4.5.0+ds-1)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
-        libignition-common-dev (<= 4.5.0+ds-1)
+Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Profiler dev file
  Ignition common is a component in the Ignition framework, a set of
