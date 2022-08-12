@@ -18,10 +18,10 @@ Build-Depends: cmake,
                libavcodec-dev,
                libswscale-dev,
                libavutil-dev
-Vcs-Browser: https://github.com/ignitionrobotics/ignition-common
+Vcs-Browser: https://github.com/gazebosim/gz-common
 Vcs-Git: https://github.com/ignition-release/ign-common4-release
 Standards-Version: 4.5.1
-Homepage: http://ignitionrobotics.org/
+Homepage: http://gazebosim.org/
 
 Package: libignition-common4
 Architecture: any
@@ -32,7 +32,7 @@ Breaks: libignition-common4-4 (<= 4.5.0+ds-1)
 Replaces: libignition-common4-4 (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Shared library
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -53,7 +53,7 @@ Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
           libignition-common-core-dev (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Core dev files
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -73,7 +73,7 @@ Breaks: libignition-common-dev (<= 4.5.0+ds-1)
 Replaces: libignition-common-dev (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Metapackage
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -89,7 +89,7 @@ Breaks: libignition-common4-av4 (<= 4.5.0+ds-1)
 Replaces: libignition-common4-av4 (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - AV libraries
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -115,7 +115,7 @@ Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990),
           libignition-common-av-dev (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - AV dev files
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -133,7 +133,7 @@ Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
           libignition-common4-events4 (<< 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Events libraries
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -153,7 +153,7 @@ Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Events dev files
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -171,7 +171,7 @@ Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
           libignition-common4-graphics4 (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Graphics libraries
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -193,7 +193,7 @@ Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Graphics dev files
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -211,7 +211,7 @@ Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990),
           libignition-common4-profiler (<= 4.5.0+ds-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Profiler libs
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
@@ -229,7 +229,7 @@ Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Profiler dev file
- Ignition common is a component in the Ignition framework, a set of
+ Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
  parsing 3D mesh files, managing console output, and using PID controllers.
