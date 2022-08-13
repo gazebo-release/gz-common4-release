@@ -19,7 +19,7 @@ Build-Depends: cmake,
                libswscale-dev,
                libavutil-dev
 Vcs-Browser: https://github.com/gazebosim/gz-common
-Vcs-Git: https://github.com/ignition-release/ign-common4-release
+Vcs-Git: https://github.com/gazebo-release/gz-common4-release
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
