@@ -237,7 +237,7 @@ Description: Collection of useful code used by robotics apps - Profiler dev file
  Profiler development files
 
 Package: libgz-common4
-Depends: libignition-common4, ${misc:Depends}
+Depends: libignition-common4 (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -245,7 +245,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-core-dev
-Depends: libignition-common4-core-dev, ${misc:Depends}
+Depends: libignition-common4-core-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -253,7 +253,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-dev
-Depends: libignition-common4-dev, ${misc:Depends}
+Depends: libignition-common4-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -261,7 +261,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-av
-Depends: libignition-common4-av, ${misc:Depends}
+Depends: libignition-common4-av (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -269,7 +269,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-av-dev
-Depends: libignition-common4-av-dev, ${misc:Depends}
+Depends: libignition-common4-av-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -277,7 +277,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-events
-Depends: libignition-common4-events, ${misc:Depends}
+Depends: libignition-common4-events (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -285,7 +285,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-events-dev
-Depends: libignition-common4-events-dev, ${misc:Depends}
+Depends: libignition-common4-events-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -293,7 +293,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-graphics
-Depends: libignition-common4-graphics, ${misc:Depends}
+Depends: libignition-common4-graphics (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -301,7 +301,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-graphics-dev
-Depends: libignition-common4-graphics-dev, ${misc:Depends}
+Depends: libignition-common4-graphics-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -309,7 +309,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-profiler
-Depends: libignition-common4-profiler, ${misc:Depends}
+Depends: libignition-common4-profiler (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
@@ -317,7 +317,7 @@ Description: transitional package
  It's recommended to use the gz packages going forward.
 
 Package: libgz-common4-profiler-dev
-Depends: libignition-common4-profiler-dev, ${misc:Depends}
+Depends: libignition-common4-profiler-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
