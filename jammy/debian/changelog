@@ -1,3 +1,9 @@
+ignition-common4 (4.6.0-1~jammy) jammy; urgency=medium
+
+  * ignition-common4 4.6.0-1 release
+
+ -- Michael Carroll <michael@openrobotics.org>  Tue, 11 Oct 2022 09:14:32 -0500
+
 ignition-common4 (4.5.2-1~jammy) jammy; urgency=medium
 
   * ignition-common4 4.5.2-1 release
